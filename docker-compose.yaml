@@ -1,0 +1,8 @@
+services:
+  entriesDB:
+    image: mongo:6.0.3
+    container_name: entries-dataBase
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongo:/data/db
